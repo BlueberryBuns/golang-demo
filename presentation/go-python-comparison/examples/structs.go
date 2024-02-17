@@ -2,6 +2,32 @@ package examples
 
 import "fmt"
 
+type DriveAxle struct {
+	Condition float64
+}
+
+func (da DriveAxle) doesDriveAxleMakeNoise() {
+	if da.Condition < 0.1 {
+		fmt.Println("Panie, Most Ci napierdala!")
+		return
+	}
+	fmt.Println("Drive Axle is fine")
+}
+
+type Engine struct {
+	Capacity int
+	Power    int
+	Mileage  int
+}
+
+func (e Engine) IsPowerful() {
+	if e.Power > 300 {
+		fmt.Println("Engine is powerful")
+		return
+	}
+	fmt.Println("Engine is weak")
+}
+
 type Car struct {
 	Brand string
 	Model string
@@ -36,32 +62,6 @@ func (c Car) drive() string {
 }
 func (c Car) isIvecoDaily() bool {
 	return true
-}
-
-type DriveAxle struct {
-	Condition float64
-}
-
-func (da DriveAxle) doesDriveAxleMakeNoise() {
-	if da.Condition < 0.1 {
-		fmt.Println("Panie, Most Ci napierdala!")
-		return
-	}
-	fmt.Println("Drive Axle is fine")
-}
-
-type Engine struct {
-	Capacity int
-	Power    int
-	Mileage  int
-}
-
-func (e Engine) IsPowerful() {
-	if e.Power > 300 {
-		fmt.Println("Engine is powerful")
-		return
-	}
-	fmt.Println("Engine is weak")
 }
 
 type coalCapable interface {
