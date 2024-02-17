@@ -82,8 +82,9 @@ func foo() error {
     return err
   }
 ```
-<div style="text-align:center"><img src="assets/mr_incredible_err.png" /></div>
-
+<p align="center">
+  <img width="460" height="300" src="assets/mr_incredible_err.png">
+</p>
 2. Syntax might seem strange **(although it's not my opinion)**
 3. Changes made recently will definitely change how Go code is handled, making old tutorials obsolete.
     - Go standard HTTP library
