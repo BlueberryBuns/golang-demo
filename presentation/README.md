@@ -96,6 +96,8 @@ func foo() error {
 <a id="govspython"></a>
 ## Go vs Python - comparison
 
+Examples are attached in the section [go-python-comparison](presentation/go-python-comparison/)
+
 <a id="dockerexample"></a>
 ## Running your code in docker
 
