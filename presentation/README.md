@@ -2,11 +2,11 @@
 
 **Table of content:**
 1. [Why is it worth to choose Go lang?](#wgl)
-1.1. [Advantages](#wgl-a)
-1.2. [Disadvantages](#wgl-d)
+    1. [Advantages](#wgl-a)
+    2. [Disadvantages](#wgl-d)
 2. [Go vs Python - comparison](#govspython)
 3. [Docker Example and Running code](#dockerexample)
-3.1 [Build for your platform and other platforms](#dockerdifferenplatform)
+    1. [Build for your platform and other platforms](#dockerdifferenplatform)
 4. [Writing HTTP server](#httpserver)
 5. [Testing in Go](#testing)
 6. [Deploying package](#deployingpackage)
