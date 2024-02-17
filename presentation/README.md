@@ -1,4 +1,4 @@
-# Presentation
+# Presentation in markdown :clown_face:
 
 **Table of content:**
 1. [Why is it worth to choose Go lang?](#wgl)
@@ -94,9 +94,24 @@ func foo() error {
 5. Pointers might seem scarry (they are not)
 
 <a id="govspython"></a>
-## Go vs Python - comparison
+## Go vs the World - comparison
 
-Examples are attached in the section [go-python-comparison](go-python-comparison/)
+Example differences between Go and Python are attached in the section [go-python-comparison](go-python-comparison/)
+
+This is short summary of what will be covered:
+0. variables
+1. lists
+2. maps
+3. loops / conditions / switch - program flow
+4. functions
+5. structs, objects
+6. pointers
+7. concurrency / goroutines
+    1. defer
+    2. channels
+    3. locks
+8. error handling
+
 
 <a id="dockerexample"></a>
 ## Running your code in docker
