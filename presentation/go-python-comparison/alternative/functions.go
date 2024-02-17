@@ -16,3 +16,7 @@ func Closure() func() int {
 		return authMiddleware
 	}
 }
+
+func SumAndReturn(a, b, c, d int, e, f float64) (int, float64) {
+	return a + b + c + d, e + f
+}

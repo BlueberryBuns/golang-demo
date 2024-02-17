@@ -100,7 +100,7 @@ Example differences between Go and Python are attached in the section [go-python
 
 This is short summary of what will be covered:
 0. variables
-1. lists
+1. lists (slices / arrays)
 2. maps
 3. loops / conditions / switch - program flow
 4. functions

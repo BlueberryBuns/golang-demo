@@ -41,8 +41,11 @@ func main() {
 	fmt.Println("This is the slice with additional elements from array: ", slice)
 
 	// Maps section (Dictionaries/Hashmaps)
+	examples.MapsExample()
 
-	// Structs section (Classes)
+	// Structs section (Classes, Interfaces)
+	examples.StructsExample()
+	examples.GenericExample()
 
 	// Errors section (Exceptions)
 
