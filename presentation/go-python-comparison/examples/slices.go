@@ -15,7 +15,6 @@ func SlicesExample() []int {
 	fmt.Printf("This is the subset 1 of slice %v\n", slice[2:])
 	fmt.Printf("This is the subset 2 of slice %v\n", slice[2:])
 	fmt.Printf("This is the subset 3 of slice %v\n", slice[2:])
-	fmt.Printf("This is the subset 4 of slice %v\n", slice[20:])
 
 	slice_additional := []int{1, 2, 3, 4, 5}
 	slice = append(slice, slice_additional...)

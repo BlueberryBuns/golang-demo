@@ -48,5 +48,14 @@ func main() {
 	examples.GenericExample()
 
 	// Errors section (Exceptions)
+	examples.ErrorsExampleCustom()
+	examples.ErrorsExampleNormal()
 
+	// Concurrency
+	examples.SeqExample()
+	examples.ChannelsExample()
+	examples.ChannelsBufferingExample()
+
+	// JSON
+	examples.JsonExample()
 }
