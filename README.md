@@ -10,6 +10,8 @@ This is demo of go for internal side project. It' purpose is to show how to work
 - [GrafanaLabs: How I write HTTP services in Go after 13 years by Mat Ryer](https://grafana.com/blog/2024/02/09/how-i-write-http-services-in-go-after-13-years/)
 - [Awesome Go - Repo of useful packages](https://github.com/avelino/awesome-go)
 - [JetBrains tutorial for all of JB fans - not for broke a** devs](https://www.jetbrains.com/guide/go/tutorials/rest_api_series/stdlib/)
+- [Middleware Patterns in Go](https://drstearns.github.io/tutorials/gomiddleware/)
+- [Making and using Middleware](https://www.alexedwards.net/blog/making-and-using-middleware)
 
 ## Prerequisites
 
