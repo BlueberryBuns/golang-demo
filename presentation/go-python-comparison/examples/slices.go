@@ -4,8 +4,8 @@ import "fmt"
 
 func SlicesExample() []int {
 	var slice []int
-	var _ = []int{1, 2, 3, 4, 5}
-	var _ = make([]int, 0, 10)
+	_ = []int{1, 2, 3, 4, 5}
+	_ = make([]int, 0, 10)
 	slice = append(slice, 10, 11, 12)
 	slice = append(slice, 20)
 	slice = append(slice, 30)
@@ -24,8 +24,8 @@ func SlicesExample() []int {
 
 func ArraysExample() [5]int {
 	var array [5]int
-	var _ = [5]int{1, 2, 3, 4, 5}
-	var _ = make([]int, 0, 10)
+	_ = [5]int{1, 2, 3, 4, 5}
+	_ = make([]int, 0, 10)
 	array[0] = 100
 	array[1] = 200
 	array[2] = 300

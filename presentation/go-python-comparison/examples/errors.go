@@ -7,7 +7,7 @@ import (
 )
 
 func ErrorsExampleNormal() {
-	//File Exists
+	// File Exists
 	file, openError := os.Open("examples/file.txt")
 	if openError != nil {
 		fmt.Printf("Error appeared during opening file.txt: %v\n", openError)

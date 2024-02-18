@@ -2,6 +2,7 @@ package examples
 
 import (
 	"fmt"
+	"reflect"
 	"sync"
 	"time"
 )
@@ -9,7 +10,6 @@ import (
 func Foo(id int) {
 	time.Sleep(1 * time.Second)
 	fmt.Println("Finished with id: ", id)
-
 }
 
 func SeqExample() {
@@ -29,9 +29,7 @@ func ChannelsExample() {
 	go func() { messages <- "Zajonc3000" }()
 
 	messageFromChannel := <-messages
-	// msg := <-messages // Error: Channel is not buffered
 	fmt.Println("Message from channel: ", messageFromChannel)
-	// fmt.Println("Message from channel: ", msg)
 }
 
 func ChannelsBufferingExample() {
@@ -65,10 +63,25 @@ func SelectExample() {
 
 func WaitGroupExample() {
 	var wg sync.WaitGroup
+	var mu sync.Mutex
 	wg.Add(1)
+
 	go func() {
-		fmt.Println("Hello")
+		mu.Lock()
+		defer mu.Unlock()
+		// Never do this, only for debugging purposes
+		fmt.Printf("Mutex is locked: %v\n", reflect.ValueOf(&mu).Elem().FieldByName("state").Int())
+
+		fmt.Println("Starting execution")
+		time.Sleep(2 * time.Second)
+		fmt.Println("ZAJONC!!!")
 		defer wg.Done()
 	}()
+	// go func() {
+	// 	fmt.Println("Hello")
+	// 	defer wg.Done()
+	// }()
 	wg.Wait()
+	fmt.Printf("Mutex is locked: %v\n", reflect.ValueOf(&mu).Elem().FieldByName("state").Int())
+	fmt.Println("All go routines finished executing")
 }

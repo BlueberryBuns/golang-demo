@@ -117,7 +117,7 @@ This is short summary of what will be covered:
 ## Running your code in docker
 
 <a id="dockerdifferenplatform"></a>
-### Build for your platform vs to other platforms
+### Build for your platform vs for other platforms
 
 <a id="httpserver"></a>
 ## Writing HTTP server

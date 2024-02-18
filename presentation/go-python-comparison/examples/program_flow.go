@@ -3,7 +3,6 @@ package examples
 import "fmt"
 
 func ProgramFlow() {
-
 	iterator := 0
 	// This is while equivalent in Go
 	for {

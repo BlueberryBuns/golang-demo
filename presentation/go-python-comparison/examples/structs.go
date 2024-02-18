@@ -60,6 +60,7 @@ func ReduceMileageViaReference(c *Car, kilometers int) {
 func (c Car) drive() string {
 	return fmt.Sprintf("Holy sh*t it's %s %s driving!", c.Brand, c.Model)
 }
+
 func (c Car) isIvecoDaily() bool {
 	return true
 }

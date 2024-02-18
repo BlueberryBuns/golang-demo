@@ -7,8 +7,15 @@ import (
 	"github.com/BlueberryBuns/presentation/go-python-comparison/examples"
 )
 
-func main() {
+const (
+	RED = iota
+	BLUE
+	GREEN
+	PURPLE
+	YELLOW
+)
 
+func main() {
 	// Variables section
 	var privateVariable string = "Hello World private"
 	fmt.Printf("This is the message %s\n", privateVariable)
@@ -20,7 +27,7 @@ func main() {
 	var PublicVariable string = "Hello World public"
 	fmt.Println("This is the message from public: ", PublicVariable)
 
-	var anotherVariable = "Hello World another"
+	anotherVariable := "Hello World another"
 	fmt.Println("This is the message from another: ", anotherVariable)
 
 	otherDeclaration := "Hello World other"
@@ -30,7 +37,7 @@ func main() {
 	fmt.Println("This is the message from constant: ", constantVariable)
 
 	// var notUsedVariable = "Hello World not used" // Error: notUsedVariable declared and not used
-	var _ = "Hello World not used"
+	_ = "Hello World not used"
 
 	alt.FooPublic()
 
@@ -55,6 +62,7 @@ func main() {
 	examples.SeqExample()
 	examples.ChannelsExample()
 	examples.ChannelsBufferingExample()
+	examples.WaitGroupExample()
 
 	// JSON
 	examples.JsonExample()

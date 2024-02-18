@@ -12,8 +12,14 @@ type Person struct {
 }
 
 func JsonExample() {
+	// Parsed as struct
 	person := Person{}
 	jsonLiteral := `{"first-name":"John","last-name":"Doe","age":21}`
 	json.Unmarshal([]byte(jsonLiteral), &person)
 	fmt.Println("Unmarshaled person: ", person)
+
+	// Parsed as map of any type
+	person_any := make(map[string]interface{})
+	json.Unmarshal([]byte(jsonLiteral), &person_any)
+	fmt.Println("Unmarshaled person: ", person_any)
 }
